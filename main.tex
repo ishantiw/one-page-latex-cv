@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Hieu Do - Resume
+% Ishan Tiwari - Resume
 % 7/26/2016
 %
 % Reference:
@@ -7,7 +7,7 @@
 
 \documentclass[]{hieudo-build}
 
-
+\usepackage[export]{adjustbox}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -15,11 +15,14 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Hieu Sy Do}
+%\begin{figure}
+%\includegraphics[width = .20\textwidth, left]{mypic}
+%\end{figure}
+\namesection{Ishan Tiwari}
 {\urlstyle{same}
-	\faEnvelope \href{mailto:hieu.do@nyu.edu}{ hieu.do@nyu.edu}\\
-	\faGithub \href{https://github.com/hieusydo}{   github.com/hieusydo}\\
-	\faLinkedinSquare \href{https://www.linkedin.com/in/hieusydo}{   linkedin.com/in/hieusydo}
+	\faEnvelope \href{mailto:ishan210788@gmail.com}{ ishan210788@gmail.com}\\
+	\faGithub \href{https://github.com/ishantiw}{   github.com/ishantiw}\\
+	\faLinkedinSquare \href{https://www.linkedin.com/in/ishantiwari}{ linkedin.com/in/ishantiwari}
 }
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,18 +35,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{}
+\includegraphics[width=0.75\textwidth]{mypic}
+\linebreak
+\_\_\_\_\faGithub \href{https://ishantiw.github.io}{ ishantiw.github.io}\_\_\_\_
 \section{Education} 
 
-\subsection{New York University}
-\descript{Tandon School of Engineering}
-BS in Computer Science \\
-Expected Grad. May 2019 \\
-Cum. GPA: 4.0\\
+\subsection{Technische Universität Berlin}
+%\descript{Tandon School of Engineering}
+Masters in Distributed Systems \\
+and Services \\
+Year 2015 - 2016 \\
+Berlin, Germany \\
+%Cum. GPA: 4.0\\
 \sectionsep
 
-\subsection{Westminster School}
-Grad. May 2015 \\
-Summa Cum Laude \\
+\subsection{University College London}
+Minor in Innovation and -\\ Entrepreneurship \\
+June-July Year 2015\\
+EIT Digital Masterschool, London \\
+\sectionsep
+
+\subsection{Université de Rennes 1}
+Masters in Distributed Systems- \\
+and Services, \\
+Year 2014 - 2015, \\
+Rennes, France \\
+\sectionsep
+
+\subsection{Uttaranchal Institute of Technology}
+Bachelor of Technology - \\
+in Computer Science\\
+2007 - 2011 \\
+Dehradun, India \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,18 +75,25 @@ Summa Cum Laude \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
 % \subsection{Programming}
-\location{Languages:}
-C++, Python, JavaScript\\ 
+\location{Core Languages Skills:}
+JavaScript, Java, C\\ 
+
+\location{Familiar with:}
+C++, CUDA, Python(Django),\\
+LaTeX, Hadoop
 
 \location{Frameworks:}
-AngularJS, NodeJS \\
+NodeJS, MEANJS
 
 \location{Databases:}
-MongoDB, SQL \\
+MongoDB, SQL, SQLlite, \\ Oracle Database \\
+
+\location{Testing:}
+Karma, JUnit, TDD, BDD
 
 \location{Tools:}
-Git, Vim, \\
-Adobe Illustrator \& InDesign \\ 
+Git, Docker,\\
+Eclipse \& Apache Drill \\ 
 
 % \sectionsep
 % \subsection{Languages}
@@ -81,25 +112,26 @@ Adobe Illustrator \& InDesign \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Coursework}
-Data Structure \\
-Algorithms \\
-Discrete Mathematics \\
-Artificial Intelligence \\
-Computer Architecture \\
-Computer Networking \\
-Data Analysis \\
-Object-Oriented Programming\\
-\sectionsep
+
+% \section{Coursework}
+% Data Structure \\
+% Algorithms \\
+% Discrete Mathematics \\
+% Artificial Intelligence \\
+% Computer Architecture \\
+% Computer Networking \\
+% Data Analysis \\
+% Object-Oriented Programming\\
+% \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     ADDITIONAL INFORMATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Activities}
-NYU Tandon Honors Program\\
-Tech@NYU - Freshman Circuit \\
-The Westminster News \\
-\sectionsep
+%\section{Activities}
+%NYU Tandon Honors Program\\
+%Tech@NYU - Freshman Circuit \\
+%The Westminster News \\
+%\sectionsep
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %     AWARDS
@@ -130,32 +162,48 @@ The Westminster News \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
 
-\workplace{NYU IT – Application Infrastructure}{Jan 2016 – present}\\
-\position{Database Engineer Intern}{New York, NY}
+\workplace{Retail Media Group}{Apr 2017 – Present}\\
+\position{Full Stack Developer}{Berlin, Germany}
 \vspace{0.9em} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Building a database management system to monitor all NYU data centers worldwide using SQL and Oracle APEX.
-\item Updating an internal server request tool by improving its user-interface and the service request process.
+\item Develop and maintenance of scalable micro service environments for big data. (Kubernetes Cluster, Nodejs, Mongodb, Redis)
+\item Set up, gather and process raw data at scale (including writing scripts, web scraping, calling APIs, write SQL queries, etc.).
+\item Process structured and unstructured data into a form suitable for analysis 
+\item Working closely to our data science team
+\item Implementing algorithms for data analysis
 \end{tightemize}
 \sectionsep
 
-\workplace{NYU Secure Systems Lab}{Jun 2016 – Aug 2016} \\
-\position{Student Researcher}{New York, NY}
-% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\workplace{T-Labs Deutsche Telekom}{Nov 2015 – Dec 2016}\\
+\position{Student researcher}{Berlin, Germany}
+\vspace{0.9em} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Researched distributed monitoring solutions for the Seattle Testbed, a distributed cloud platform, using Python and an in-house restricted version of Python (Repy).
-\item Designed the monitoring pipeline that accounts for the monitoring tools' accessibility, modularity, and scalability.
+\item Developing address book using NodeJS for \href{https://rethink-project.eu/}{reTHINK} for one of their use cases i.e., peer-to-peer social networking.
+\item Integrating different components of reTHINK framework in order to make address book working and contributing to various repositories associated to these components. 
+\item Research in P2P online social network including various attributes used for recommendations and testing them quantitatively.
 \end{tightemize}
 \sectionsep
 
-\workplace{INSPI Corp – ZenQuiz Team }{Jun 2015 – Aug 2015} \\
-\position{Software Engineer Intern}{Ho Chi Minh City, Vietnam}
+\workplace{IGATE Global Solutions Limited (Capgemini)}{Jan 2012 – Apr 2014} \\
+\position{Senior Software Engineer}{Mar 2013 – Apr 2014, Bangalore, India}
+\position{Project - VARIABLE COMPENSATION PLAN (VCP)}{}
+\position{Client - GE Healthcare}{}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Built a Question \& Answer platform for 10,000,000+ users.
-\item Implemented the frontend features and backend server using MongoDB, ExpressJS, AngularJS, and NodeJS (MEAN stack)
+\item Development and testing various modules of VCP application using JSP, JavaScript \& Spring.
+\item Created various documents related to client requirement, mappings and user training and writing procedures in Oracle for all the calculations related to Variable compensation.
 \end{tightemize}
 \sectionsep
+
+\position{Software Engineer}{Jan 2012 – Feb 2013, Bangalore, India}
+\position{Project - Emptoris Contract Management}{}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developing interview flows, contract, clause, users/user groups and approval rules and deployment of \href{https://www-01.ibm.com/software/info/emptoris/}{Emptoris Contract Management} for \href{www.gehealthcare.com/}{GE Healthcare} (Java, EJB and Web Logic).
+\end{tightemize}
+\sectionsep
+
+
 
 % \runsubsection{The Westminster News} \\
 % \descript{Co-Editors-in-Chief (2014) | Layout Editor (2012) }
@@ -180,27 +228,30 @@ The Westminster News \\
 %     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
-\runsubsection{Notr}
+\runsubsection{AIM1 project "NiteOut"}
 \descript{}
-A web app that visualize texts by creating dynamic mind maps from users' input. Built with AngularJS using D3.js and Ace.
+\location{Technische Universität Berlin, Berlin 2016}
+A web app to manage a group of events in an efficient way for a group of students in Berlin that takes real-world data of cinemas, transport, museums, etc from various data sources using MEAN STACK.
+
+https://github.com/hielsnoppe/edu-aim1
+
 \sectionsep
 
-\runsubsection{Alertify}
+\runsubsection{Uncovering business opportunities from Yelp and OSM}
 \descript{}
-\location{Best Software, Wearhacks NY 2015}
-An Android mobile and wearable app that recognizes hand gestures to send emergency alerts. Built with Java using Presto API.
+\location{Yelp Dataset Challenge 8th round}
+Predicting success of a business at a location on a map.  Using location specific features, a heatmap is generated, which predicts the success of a location for a business type based on machine learning. We used Apache drill, NodeJS and LeafletJS.
 \sectionsep 
 
-\runsubsection{Sia}
+\runsubsection{Google Transport API Parser}
 \descript{}
-\location{2nd Prize, Hackademics VN 2015}
-A pioneering sex-ed website that promotes sexuality and gender awareness among Vietnamese teenagers. Built with MEAN stack.
+\location{Technische Universität Berlin, Berlin 2015}
+A module which parses the JSON data coming from Google transport API and provides various ways to display information (console, on map and object)
+
+https://github.com/ishantiw/googleTransportAPIparser
 \sectionsep
 
-\runsubsection{Imagely}
-\descript{}
-A web app that enhances language-learning experience by generating new words from pictures. Built with MEAN stack using Clarifai API and Yandex API.
-\sectionsep 
+
 
 \end{minipage} 
 

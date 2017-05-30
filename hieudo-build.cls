@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.5cm, vmargin=1.5cm]{geometry}
+\usepackage[hmargin=1.5cm, vmargin=1.5cm, paperheight=16in]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -42,12 +42,12 @@
 
 % Name command
 \newcommand{\namesection}[2]{
-	\hspace{-1.7em}\raggedright{\parbox[b]{30em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{58pt}{0cm}\selectfont #1}}
+	\hspace{-1.7em}\raggedright{\parbox[b]{30em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{30pt}{0cm}\selectfont #1}}
     \hfill
-    \raggedleft{\parbox[b]{12em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
-   	\vspace{2.2em} 
+    \raggedleft{\parbox[b]{14em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{9pt}{12pt}\selectfont #2}}
+   	\vspace{1.2em} 
 }
-\titlespacing{\section}{0pt}{0pt}{5pt}
+\titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Headings command
 \titleformat{\section}{\color{headings}
